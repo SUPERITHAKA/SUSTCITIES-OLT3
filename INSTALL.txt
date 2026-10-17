@@ -1,0 +1,25 @@
+OLT GAMIFIED WEB APP UPGRADE
+
+This ZIP contains exactly three replacement files:
+  web/src/App.jsx
+  web/src/data/lessons.js
+  web/src/styles/index.css
+
+It DOES NOT modify your report, Thesis.tex, Git configuration, package.json,
+or previous commits. Dependencies remain React and Vite (already installed).
+
+Install from the existing project root in Windows PowerShell:
+
+Set-Location "C:\Users\Andres\STUSTCITIES-OLT3"
+Expand-Archive -LiteralPath "$HOME\Downloads\OLT_Gamified_Web_Upgrade.zip" -DestinationPath "." -Force
+Set-Location ".\web"
+npm run build
+npm run dev
+
+Open the local URL printed by Vite (usually http://localhost:5173/).
+
+The app saves progress locally using browser localStorage. It does not transmit
+answers to a server. For shared team analytics or participant studies, explicit
+consent and a separate research data collection implementation are needed.
+
+Be sure to evaluate content, accessibility, and question wording with your team.
