@@ -1,23 +1,30 @@
-% !TEX root = ../Thesis.tex
-% Based on the original LUT LaTeX title page: logo / title / institution.
+% Align logo to left.
 \begin{flushleft}
-  \includegraphics[width=5.03cm]{LUT_logo}
+    % Input LUT logo.
+	\begin{figure}
+		\includegraphics[width=5.03cm]{LUT_logo}
+		\label{fig:lut_logo}
+	\end{figure}
 \end{flushleft}
 
+% Use 2,0 linespacing.
 \doublespacing
-\vspace*{5.5cm}
-\noindent\textbf{SUSTAINABLE CITIES: ONLINE LEARNING TOOL (OLT)}\\
-\textbf{STORMWATER MANAGEMENT AND FLOOD RESILIENCE}\\
-Development and Evaluation of an Accessible Web-Based Learning Experience
 
-\vfill
-\begin{flushleft}
-Lappeenranta-Lahti University of Technology LUT\\
-Sustainable Cities (BH60A6200)\\
-Course project report\\
-2026\\[1em]
-Authors: Sustainable Cities OLT Project Team\\
-% TODO: Replace with confirmed names of ALL contributors.
-Course instructor: To be confirmed
-\end{flushleft}
-\clearpage
+% Add extra space before title.
+\vspace{6cm}		
+\textbf{TITLE OF THE BACHELOR’S OR MASTER'S THESIS IN CAPITAL LETTERS, BOLD TYPE, LEFT-ALIGNED, STARTING 11 CM FROM THE TOP OF THE PAGE}\\
+Possible subheading
+
+% Align text to bottom left.
+{\flushleft\vfill{
+	Lappeenranta-Lahti Univeristy of Technology LUT\\
+	Your school xxx\\
+	Your degree programme xxx\\
+		
+    % Input current year.
+    \the\year{}\\
+    Author’s first name and last name\\
+	Examiners: Title, First name and Last name (e.g. Professor John Smith)\\
+	% Adjust second examiner space.
+	\hspace{19.5mm} Title, First name and Last name (e.g. Professor John Smith)\\
+}}

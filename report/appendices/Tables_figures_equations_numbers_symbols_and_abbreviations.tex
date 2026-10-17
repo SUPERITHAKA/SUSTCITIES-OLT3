@@ -1,0 +1,84 @@
+\chapter{APPENDIX: TABLES, FIGURES, EQUATION, NUMBERS. SYMBOLS AND ABBREVIATIONS}
+It is a good idea to illustrate your text with figures and tables. Figures and tables must have captions and consecutive numbering. The captions of tables are placed above the table and those of figures below the figure. Refer to the figures and tables in the text body, preferably before you introduce them, and align them with the text body.
+
+Remember to add alt text (alternative text) to your figures and tables to ensure accessibility. Alt text is read with a designated reader and can be viewed even when the image cannot be displayed on the page. The MS Word text processing software creates alt text automatically, but you should make sure it describes the object sufficiently and understandably. You can modify the alt text by right-clicking on the figure or table.
+
+\underline{Tables}
+
+Remember to add alt text (alternative text) to your figures and tables to ensure accessibility. Alt text is read with a designated reader and can be viewed even when the image cannot be displayed on the page. The MS Word text processing software creates alt text automatically, but you should make sure it describes the object sufficiently and understandably. You can modify the alt text by right-clicking on the figure or table.
+
+% Crate new centered table.
+\begin{table}[!ht]
+    \centering
+    \vspace{1em}
+    \caption{Sensor measurements}
+    \begin{tabularx}{\textwidth}{|X|X|}
+    	\hline
+    	Voltage \textit{U} [V] & Pressure \textit{p} [Pa]\\
+    	\hline
+    	0.984 & 0\\
+    	\hline
+    	2.252 & 150\\
+    	\hline
+    	2.772 & 300\\
+    	\hline
+    	3.181 & 450\\
+    	\hline
+    	3.615 & 600\\
+    	\hline
+    	3.817 & 750\\
+    	\hline
+    	4.088 & 900\\
+    	\hline
+    \end{tabularx}
+\end{table}
+
+\underline{Figures, charts, graphic elements}
+
+Images help illustrate your text. The text should contain a reference to the image \autoref{fig:figure_1}. Number your figures and place a caption underneath – not inside the figure.
+
+You should use a software programme such as Excel or Matlab to draw charts. Charts should be clear and easy to understand. Use a white background. A background grid is allowed if it does not make the figure difficult to interpret. Variables and measurement points should be clearly visible. Name the axes and their units.
+
+Create as much of the figures yourself as you can. Use the same font as in the text body and equations. If you use images created by someone else, remember to cite them correctly. Remember that images are copyrighted works, the use of which must always be authorized by the author. Captions need to be in the same language as the text body.
+
+% Add new figure.
+\begin{figure}
+	\centering
+	\vspace{2em}
+	\includegraphics[width=0.6\textwidth]{Figure_1}
+	\caption{Gas fermentor (VTT 2020, LUT image bank)}
+	\label{fig:figure_1}
+\end{figure}
+
+Do not end a paragraph in a figure or table. Add text underneath, such as comments on the figure. Large figures, tables, long equations and other supporting material can be appended, if needed.
+
+\underline{Numbers, symbols and equations}
+
+Numbers in the text are usually approximations. Their accuracy depends on the observational error. Include only significant figures in the results. Interim results should include at least two figures more to avoid round-off errors. Present large and small figures in powers of ten 10ⁿ, where n should preferably be divisible by three.
+
+Equations and other mathematical expressions must consist of standardised symbols if ones exist. You may use other symbols only if there are no applicable standardised or established ones.
+
+Explain the symbols in an equation when you use them for the first time. Write each equation clearly on its own line and indent it. Number your equations consecutively or by paragraphs so that the number is in parentheses on the right side of the equation and aligned to the right. You can refer to an equation only after you have presented it, with certain exceptions, such as if the object you are referring to is far ahead. Example:
+% Add new equation.
+\begin{equation}
+    pv = RT
+\end{equation}
+
+where \textit{p} is pressure [Pa], \textit{v} is specific volume [m³/kg], \textit{R} is the gas constant [J/kgK] and \textit{T} is temperature [K].
+
+When writing symbols for your thesis, it is recommended to check the spelling with the MS Word equation editor. It follows general rules for the writing of symbols, e.g. 
+
+\begin{itemize}[noitemsep]
+	\item Write scalars in italics and vectors in bold, not in italics. Don’t write dimensionless quantities in italics.
+	\item Write subscripts upright unless there is a need to italicise them. Write abbreviated subscripts and numerals e.g. as follows: $\triangle\sigma_w$, $\sigma_1$, $\sigma_{min}$. For instance, in the summation $\sum_\textit{i}^\infty x_\textit{i}$ the subscript needs to be italicised because it represents a variable.
+	\item If you wish to express change in e.g. pressure $\triangle p$, write $\triangle$ in a regular font. In some cases, $\triangle$ may also be a variable and should then be italicised. $\pi$ is the ratio of a circle’s circumference to its diameter. $\pi$ may be the pressure ratio.
+	\item Do not italicise mathematical operators such as sin x or lg y.
+	\item Distinguish absolute values as follows: ”variable\_=\_number\_unit”, with the exception of a percentage sign after a numeral, e.g. a = 5.2 mm, $\gamma$ = 97.7\%
+	\item Use a decimal point (“.”) in accordance with international standards. In contrast, a decimal comma is used in theses written in Finnish. This also applies to figures and tables.
+\end{itemize}
+
+\underline{List of symbols and abbreviations}
+
+List symbols and abbreviations and their definitions that are not common knowledge separately on their own page before the table of contents. Divide them into groups: Roman symbols, Greek symbols, and finally, abbreviations. Give the page the heading Symbols if there are no abbreviations or Abbreviations if there are no symbols.
+
+When you use a symbol or abbreviation in the text body for the first time, introduce it to the reader for example as follows: “The concept design for manufacturing and assembly (DFMA) is...”. After this, you can use only the abbreviation, and the reader can verify its meaning from the abbreviation list. Do not add concepts to the list of symbols and abbreviations that you do not mention in your text body.

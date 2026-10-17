@@ -1,44 +1,93 @@
-% !TEX program = xelatex
-% LUT University original thesis template: adapted for a Sustainable Cities COURSE REPORT.
-% Keep Document_properties.tex and Figures/LUT_logo.pdf from the user's original LUT ZIP.
+% ------------------------------------------------------------------
+% This template is created based on the official Word template.    |
+% Some instructions given in this template may be only valid for   |
+% the Word template. However all of the included sections are      |
+% useful for presenting basic LaTeX commands.                      |
+%                                                                  |
+% Happy thesis writing!                                            |
+% Best regards,                                                    |
+% Template author                                                  |
+% ------------------------------------------------------------------
+
+
+% Import document properties file that defines formatting
+% of the document.
 \input{Document_properties}
 
+% Begin main contents.
 \begin{document}
-    \pagenumbering{roman}
-    \thispagestyle{empty}
+	% Setup roman page numbering for the first pages.
+	\pagenumbering{roman}
+	\thispagestyle{empty}
 
-    % LUT cover page (adapted for course context; not falsely called a thesis)
-    \input{Chapters/Title}
-    \clearpage
+    % THIS CHAPTER SHOULD BE REMOVED.
+    % --------------------------------------------------------------
+    % Input Introduction page.                                     |
+    % Original template instructional page removed % |
+    % Reset page numbering.                                        |
+    \pagebreak %                                                   |
+    \setcounter{page}{1} %                                         |
+    % --------------------------------------------------------------
 
-    \singlespacing
-    \input{Chapters/Abstract}
+	% Input title page
+	\input{Chapters/Title}
 
-    \onehalfspacing
-    \input{Chapters/Acknowledgments}
-    \input{Chapters/Symbols_and_abbreviations}
-    \clearpage
+	% Hide page number on the first page.
+	\thispagestyle{empty}
 
-    \pagenumbering{arabic}
-    \input{Chapters/Table_of_contents}
-    \clearpage
-
-    \input{Chapters/01_Introduction}
-    \input{Chapters/02_Theoretical_background}
-    \input{Chapters/03_Methodology}
-    \input{Chapters/04_Design_and_implementation}
-    \input{Chapters/05_Testing_and_results}
-    \input{Chapters/06_Discussion}
-    \input{Chapters/07_Conclusions}
-
-    \renewcommand{\bibname}{REFERENCES}
-    \printbibliography[heading=bibintoc]
-
-    % Original LUT appendix structure, limited to this project's own appendix.
-    \ResumeSuspendedCounters{appendixchapters}
-    \noappendicestocpagenum
-    \begin{appendices}
-        % Appendix page numbers use default formatting
-        \input{Appendices/User_testing_protocol}
-    \end{appendices}
+	% Begin tighter line spacing used in the abstract.
+	\singlespacing
+	
+	% Input English abstract.
+	\input{Chapters/Abstract}
+	
+	% Input Finnish abstract.
+	% Finnish abstract not used in this course report
+	
+	% Begin standard line spacing used in the rest of the document.
+	\onehalfspacing
+	
+	% Input acknowledgements chapter.
+	\input{Chapters/Acknowledgments}
+	
+	% Input list of abbreviations.
+	\input{Chapters/Symbols_and_abbreviations}
+	
+	% Setup normal arabic page numbering.
+	% Forced page break is needed here, because acknowledgements
+	% must be ended before beginning the arabic page numbering.
+	\pagebreak
+	\pagenumbering{arabic}
+	
+	% Input table of contents.
+	\input{Chapters/Table_of_contents}
+	
+	% Input introduction.
+	\input{chapters/01_Introduction}
+\input{chapters/02_Theoretical_background}
+\input{chapters/03_Methodology}
+\input{chapters/04_Design_and_implementation}
+\input{chapters/05_Testing_and_results}
+\input{chapters/06_Discussion}
+\input{chapters/07_Conclusions}
+	
+	% Input conclusions.
+	\input{Chapters/Conclusions}
+	
+	% Insert bibliography.
+	\renewcommand{\bibname}{REFERENCES}
+	\printbibliography[heading=bibintoc]
+	
+	% THIS SECTION SHOULD BE REMOVED.
+    % -------------------------------------------------------------------------------------
+    \vspace{2em} %                                                                        |
+    Note: More information on referencing is available in \autoref{appendix:references} % |
+    % -------------------------------------------------------------------------------------
+	
+	% Begin automatic counting of the appendices.
+	\clearpage
+\appendix
+\input{Appendices/User_testing_protocol}
 \end{document}
+
+% End of the document.

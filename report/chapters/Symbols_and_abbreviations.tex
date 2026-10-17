@@ -1,12 +1,81 @@
-% !TEX root = ../Thesis.tex
-\chapter*{SYMBOLS AND ABBREVIATIONS}
-\addcontentsline{toc}{chapter}{SYMBOLS AND ABBREVIATIONS}
-\begin{tabularx}{\textwidth}{@{}lX@{}}
-\textbf{OLT} & Online Learning Tool\\
-\textbf{UI} & User Interface\\
-\textbf{UX} & User Experience\\
-\textbf{WCAG} & Web Content Accessibility Guidelines\\
-\textbf{HTML} & HyperText Markup Language\\
-\textbf{CSS} & Cascading Style Sheets\\
-\textbf{PWA} & Progressive Web Application (a possible future extension)\\
-\end{tabularx}
+% Chapter title without a number and manual table of contents entry.
+\chapter*{SYMBOLS AND ABBREVIATIONS (may be included, but not relevant for all theses)}
+\addcontentsline{toc}{chapter}{SYMBOLS AND ABBREVIATIONS}  
+
+% Define new width used in the symbol table.
+\newlength{\symboltablelength}
+\setlength{\symboltablelength}{\dimexpr(\textwidth-4.0pt)}
+% Define new styled tables for symbols.
+\newenvironment{symboltable}{
+    \par\noindent
+    % No space betwnn table columns.
+    \setlength\tabcolsep{0pt}
+    % Extra space between table rows.
+    \renewcommand{\arraystretch}{1.5}
+    % Define table.
+    \tabularx{\symboltablelength}{X X X c}
+}
+{
+    % One extra row to add "space" after table.
+    & & &\\
+    \endtabularx
+}
+
+% Define characters and constants.
+\textbf{Roman characters}
+% Begin new custom table.
+\begin{symboltable}
+    % One column.
+    \textit{p} & pressure & [bar, Pa] &\\
+    \textit{qm} & mass flow rate & [kg/s] &\\
+    \textit{R} & gas constant & [J/kg K] &\\
+    \textit{T} & temperature & [ºC, K] &\\
+    \textit{U} & voltage & [V] &\\
+    \textit{V} & volume & [m3] &\\
+    \textit{v} & specific volume & [m3/kg] &\\
+    \textit{x} & vapour content & &\\
+\end{symboltable}
+
+\textbf{Greek characters}
+\begin{symboltable}
+    \textit{$\alpha$} & incidence angle & [\textdegree] &\\
+    \textit{$\gamma$} & thermal conductivity & [W/mK] &\\
+\end{symboltable}
+
+\textbf{Constants}
+\begin{symboltable}
+    g & gravitational acceleration & 9,81 m/s &\\
+\end{symboltable}
+
+\textbf{Dimensionless quantities}
+\begin{symboltable}
+    Re & Reynolds number & &\\
+\end{symboltable}
+
+% Manually insert one new page.
+\newpage
+\textbf{Subscripts}
+\begin{symboltable}
+    1 & inflow & &\\
+    2 & outflow & &\\
+    kr & critical & &\\
+    mit & mit measured & &\\
+\end{symboltable}
+
+\textbf{Superscripts}
+\begin{symboltable}
+    ' & stator & &\\
+    " & rotor & &\\
+\end{symboltable}
+
+% Define abbreviations.
+\newacronym{cfd}{CFD}{Computational Fluid Dynamics}
+\newacronym{orc}{ORC}{Organic Rankine Cycle}
+
+% Print abbreviations.
+\textbf{Abbreviations}
+\setglossarysection{section}
+\renewcommand{\glossarysection}[2][]{}
+% Do not print numbers, no extra dots, no grouping based on the letters
+% and only abbreviations.
+\printglossary[nonumberlist,nopostdot=true,nogroupskip=true,type=\acronymtype]

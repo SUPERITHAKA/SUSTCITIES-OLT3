@@ -1,0 +1,82 @@
+\chapter{APPENDIX: LATEX TRICKS}\label{appendix:latex_tricks}
+During this appendix, some general commands are demonstrated.
+
+Using \textit{chapter}, \textit{section}, \textit{subsection} commands, it is possible to add new titles that will be automatically added to the table of contents.
+
+References in the bibliography can be cited using \textit{cite} command. For example \cite{stratton1976needs}. \textit{Cite} command supports also multiple sources. For example: \cite{hirsijarvi2009tutki, virtanen2011esimerkkilahde}. In addition author's name can be referenced using \textit{citeauthor} command. For example: \citeauthor{hirsijarvi2009tutki}.
+
+Using \textit{gls} command, it is easy to reference abbreviations. For example when the command is used first time: \gls{cfd}, abbreviation is fully opened. When the command is used second time, only short version of the abbreviation will be used: \gls{cfd}. This feature is useful, if the text is later refactored. Using \textit{glspl} it is possible to insert plural form of the abbreviation. For example \glspl{orc}.
+
+Titles, figures, tables and many other things can be labeled using \textit{label} command. Later these labels can be automatically referenced using \textit{autoref} command. For example \autoref{appendix:latex_tricks}. Additionally link is automatically created.
+
+Using \textit{itemize} environment and \textit{item} command, it is possible to define unordered lists. For example:
+\begin{itemize}[noitemsep]
+	\item Item 1
+	\item Item 2
+\end{itemize}
+
+Using \textit{enumerate} environment and \textit{item} command, it is possible to define ordered lists. For example:
+\begin{enumerate}[noitemsep]
+	\item Item 1
+	\item Item 2
+\end{enumerate}
+
+Lists can also be nested naturally. For example:
+\begin{enumerate}[noitemsep]
+	\item Item 1
+	\begin{enumerate}[noitemsep]
+		\item Sub item 1
+		\item Sub item 2
+	\end{enumerate}
+\end{enumerate}
+
+When placing figure, LaTeX tries to find optimal placement that use space as efficiently as possible. Sometimes this doesn't end up looking great, because figures are placed too far a way from the text. Figures can be forced to be placed before point x using \textit{FloatBarrier} command.
+
+It is also possible to create new commands using LaTeX using \textit{newcommand}. See example definition and usage of the green check mark bellow:
+
+\newcommand{\greencheckmark}{
+	\color{green}\ding{51}\color{black}
+}
+This is a green check mark: \greencheckmark.
+
+Using appropriate commands, it is possible to create quite advanced structures. For example when presenting survey questions following definitions could be useful:
+
+\makeatletter
+\newcommand{\radiobutton}{
+	\begin{tikzpicture}
+	    % Set radius.
+		\pgfmathsetlengthmacro\radius{height("X")/2}
+		% Draw circle.
+		\draw[radius=\radius] circle;
+	\end{tikzpicture}
+}
+\makeatother
+
+% Create Likert scale description numbers.
+\newcommand{\likertscaledescription}{
+	1\hspace*{2em}2\hspace*{2em}3\hspace*{2em}4\hspace*{2em}5\hspace*{2em}6
+}
+
+% Create Likert scale radio buttons.
+\newcommand{\likertscalebuttons}{
+	\hspace*{0.2em}\radiobutton\hspace*{1.318em}\radiobutton\hspace*{1.318em}\radiobutton\hspace*{1.318em}\radiobutton\hspace*{1.318em}\radiobutton\hspace*{1.318em}\radiobutton\hspace*{0.2em}
+}
+
+% Combine Likert scale components into table.
+% Note usage of the parameter usage.
+\newcommand{\likertscalesmall}[2]{
+	\begin{center}
+		\begin{tabular}{c c c}
+			& & \\
+			& \likertscaledescription & \\ 
+			#1 & \likertscalebuttons & #2 \\
+			& & \\
+		\end{tabular}
+	\end{center}
+}
+
+\vspace{2em}
+\begin{enumerate}
+    \item How good this template was?
+    \likertscalesmall{Very bad}{Very good}
+\end{enumerate}

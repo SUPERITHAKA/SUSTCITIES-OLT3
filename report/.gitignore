@@ -1,4 +1,0 @@
-# Retain the LUT source logo despite the root PDF ignore rule.
-!Figures/LUT_logo.pdf
-# Compilation artefacts are local only.
-build/
