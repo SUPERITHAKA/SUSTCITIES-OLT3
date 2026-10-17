@@ -1,7 +1,4 @@
 
-Set-Location "C:\Users\Andres\STUSTCITIES-OLT3"
-
-@'
 # Sustainable Cities – Online Learning Tool (OLT)
 
 **LUT University | Sustainable Cities | Academic Year 2026–2027**
