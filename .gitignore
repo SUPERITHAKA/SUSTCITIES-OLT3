@@ -39,3 +39,8 @@ Thumbs.db
 *.tmp
 *.bak
 /report/build/
+/web/node_modules/
+/web/dist/
+*.synctex(busy)
+*.bbl-SAVE-ERROR
+/LUT_Thesis_Template_3_.zip
