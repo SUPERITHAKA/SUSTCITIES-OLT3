@@ -1,0 +1,44 @@
+% !TEX program = xelatex
+% LUT University original thesis template: adapted for a Sustainable Cities COURSE REPORT.
+% Keep Document_properties.tex and Figures/LUT_logo.pdf from the user's original LUT ZIP.
+\input{Document_properties}
+
+\begin{document}
+    \pagenumbering{roman}
+    \thispagestyle{empty}
+
+    % LUT cover page (adapted for course context; not falsely called a thesis)
+    \input{Chapters/Title}
+    \clearpage
+
+    \singlespacing
+    \input{Chapters/Abstract}
+
+    \onehalfspacing
+    \input{Chapters/Acknowledgments}
+    \input{Chapters/Symbols_and_abbreviations}
+    \clearpage
+
+    \pagenumbering{arabic}
+    \input{Chapters/Table_of_contents}
+    \clearpage
+
+    \input{Chapters/01_Introduction}
+    \input{Chapters/02_Theoretical_background}
+    \input{Chapters/03_Methodology}
+    \input{Chapters/04_Design_and_implementation}
+    \input{Chapters/05_Testing_and_results}
+    \input{Chapters/06_Discussion}
+    \input{Chapters/07_Conclusions}
+
+    \renewcommand{\bibname}{REFERENCES}
+    \printbibliography[heading=bibintoc]
+
+    % Original LUT appendix structure, limited to this project's own appendix.
+    \ResumeSuspendedCounters{appendixchapters}
+    \noappendicestocpagenum
+    \begin{appendices}
+        % Appendix page numbers use default formatting
+        \input{Appendices/User_testing_protocol}
+    \end{appendices}
+\end{document}
