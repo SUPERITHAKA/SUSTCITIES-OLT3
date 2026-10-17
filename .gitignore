@@ -1,0 +1,40 @@
+# Node / Vite
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Local editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+/report/**/*.pdf
+/report/**/build/
+
+# Temporary files
+*.tmp
+*.bak
