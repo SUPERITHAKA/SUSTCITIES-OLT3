@@ -1,290 +1,129 @@
+# Stormwater Academy – Online Learning Tool (OLT)
 
-# Sustainable Cities – Online Learning Tool (OLT)
-
-**LUT University | Sustainable Cities | Academic Year 2026–2027**
+**Sustainable Cities | LUT University | Academic Year 2026–2027**
 
 ## 1. Project Overview
 
-The Online Learning Tool (OLT) is a Sustainable Cities course
-project at LUT University, Finland.
+Stormwater Academy is a student-developed online learning tool designed to make stormwater management and urban flood resilience accessible, interactive, and engaging.
 
-The aim is to further develop and test an accessible,
-interactive, and engaging online learning experience
-focused on stormwater management and urban flood resilience.
+The platform explores how rainwater moves through urban environments, how urbanization affects surface runoff, and how sustainable solutions can help cities manage stormwater and reduce flood risks.
 
-Urbanization, impermeable surfaces, and changing precipitation
-patterns contribute to stormwater management challenges.
-
-The project explores how digital education can improve
-understanding of these challenges and the solutions
-available to create more sustainable and resilient cities.
-
-The work combines environmental education, web application
-development, user-centered design, and scientific evaluation.
+The project combines environmental education, web development, interactive learning, and gamification to promote awareness of sustainable urban development.
 
 ## 2. Project Objectives
 
-### Main Objective
+- Develop an engaging online learning experience.
+- Explain stormwater management and urban flooding.
+- Introduce sustainable drainage and green infrastructure solutions.
+- Improve environmental awareness through interactive education.
+- Encourage critical thinking through practical scenarios.
+- Evaluate usability, accessibility, and learning effectiveness.
 
-Further develop and evaluate an accessible and engaging
-online learning experience for stormwater and flood resilience.
+## 3. Educational Content
 
-### Specific Objectives
+The learning experience is organized into three main missions:
 
-1. Examine existing online learning approaches and identify
-   opportunities for improvement.
-
-2. Develop educational content explaining stormwater,
-   urban flooding, and flood resilience.
-
-3. Improve the usability, accessibility, and interactivity
-   of the online learning experience.
-
-4. Implement learning activities, interactive questions,
-   and visual educational components.
-
-5. Evaluate the learning tool through structured testing
-   and user feedback.
-
-6. Assess usability, accessibility, user engagement,
-   and learning effectiveness.
-
-7. Identify limitations and recommend future improvements.
-
-## 3. Educational Scope
-
-The proposed learning experience covers:
-
-### Stormwater Management
-
+### Mission 01 – Stormwater Basics
 - Urban water cycle
 - Rainfall and surface runoff
+- Infiltration and catchments
 - Impermeable surfaces
-- Stormwater drainage systems
-- Effects of urbanization
+- Urban drainage systems
 
-### Urban Flooding
-
-- Flood causes and mechanisms
-- Urban flood risks
-- Environmental and societal impacts
-- Climate adaptation
-- Flood preparedness
-
-### Sustainable Solutions
-
-- Sustainable urban drainage systems
+### Mission 02 – Green Solutions
+- Sustainable urban drainage systems (SuDS)
 - Nature-based solutions
 - Green infrastructure
 - Permeable pavements
 - Rain gardens and green roofs
 
-### Flood Resilience
+### Mission 03 – Flood Resilience
+- Urban flood mechanisms
+- Flood risks and impacts
+- Climate adaptation
+- Flood preparedness
+- Resilient urban environments
 
-- Flood risk awareness
-- Community preparedness
-- Risk reduction strategies
-- Resilient urban infrastructure
-- Individual and collective responsibilities
+## 4. Platform Features
 
-## 4. Web Application Development
+The current prototype includes:
 
-The OLT is being developed as a browser-based learning
-application using React, JavaScript, Vite, and CSS.
+- Three interactive learning missions.
+- 30 knowledge-check questions.
+- Multiple-choice exercises with answer feedback.
+- Interactive city simulation.
+- Practical decision-making challenges.
+- XP and learning progression system.
+- Achievement badges and rewards.
+- Responsive interface.
+- Local learning progress storage.
 
-The initial prototype includes:
+## 5. Technology Stack
 
-- Educational learning modules
-- Multiple-choice knowledge checks
-- Immediate answer feedback
-- Learning progress indicators
-- Responsive user interface
-- Basic accessibility-oriented controls
+The application is developed using:
 
-Further development will be guided by the project
-requirements and evaluation findings.
+- **React** – User interface and components.
+- **JavaScript** – Application functionality.
+- **Vite** – Development environment and build tool.
+- **CSS** – Styling and responsive layouts.
+- **Git & GitHub** – Version control and collaboration.
 
-The initial implementation is a prototype and has not
-yet been established as fully accessible or effective.
+## 6. Development and Evaluation
 
-## 5. Research and Development Methodology
+The project follows an iterative development process:
 
-The project follows an iterative development and
-evaluation approach.
+1. Research and educational content development.
+2. User interface and experience design.
+3. Implementation of learning modules.
+4. Interactive features and gamification.
+5. Functional and usability testing.
+6. Accessibility evaluation.
+7. Improvements based on testing and feedback.
 
-### Phase 1 – Background Research
+Potential evaluation areas include WCAG 2.2 accessibility guidelines, usability, mobile compatibility, user engagement, and learning outcomes.
 
-Review literature and educational resources related to
-stormwater, flooding, sustainability education, and
-accessible digital learning.
+Testing activities and results should be documented as they are completed.
 
-### Phase 2 – Requirements and Design
+## 7. Team Collaboration
 
-Identify learning objectives, user needs, accessibility
-requirements, and opportunities to improve the OLT.
+This is a collaborative student project. All team members are encouraged to contribute to the development and improvement of the platform.
 
-### Phase 3 – Implementation
-
-Develop and improve the learning modules, interface,
-interactive elements, and educational activities.
-
-### Phase 4 – Testing and Evaluation
-
-Evaluate the application using appropriate methods,
-potentially including:
-
-- Accessibility checks against WCAG 2.2
-- Task-based usability testing
-- User feedback questionnaires
-- Learning assessments
-- Mobile and desktop testing
-
-### Phase 5 – Analysis and Improvement
-
-Analyze collected evidence, identify problems,
-implement feasible improvements, and evaluate limitations.
-
-These are planned phases; individual activities must
-be documented as completed only when performed.
-
-## 6. Academic Report
-
-The scientific report documents the development and
-evaluation of the Online Learning Tool.
-
-It follows an IMRAD-oriented structure adapted to the
-engineering project and LUT report formatting.
-
-### Report Organization
-
-**Front Matter**
-- LUT University title page
-- Abstract
-- Acknowledgments
-- Symbols and Abbreviations
-- Table of Contents
-
-**Main Report**
-1. Introduction
-2. Theoretical Background
-3. Methodology
-4. Design and Implementation
-5. Testing and Results
-6. Discussion
-7. Conclusions
-
-**Back Matter**
-- References
-- Appendices
-
-### Scientific Reporting Requirements
-
-The report should explain:
-
-- The problem and its significance
-- Relevant scientific and technical background
-- Project objectives and research questions
-- Development methodology
-- Application architecture and implementation
-- Testing methods and participant information
-- Actual results and evaluation evidence
-- Interpretation and limitations
-- Conclusions and future recommendations
-
-Results must be supported by actual tests, observations,
-measurements, or documented evidence.
-
-Planned experiments must not be presented as completed.
-
-## 7. LUT LaTeX Report Template
-
-The report uses formatting files adapted from the
-original LUT University LaTeX thesis template.
-
-The academic formatting is retained while the
-content is adapted to a Sustainable Cities course report.
-
-Official LUT template information:
-
-https://elut.lut.fi/en/completing-studies/theses/masters-thesis
-
-The report is NOT a submitted Bachelor's or Master's thesis.
-
-### Important Files
-
-- Thesis.tex – Main LaTeX document
-- Document_properties.tex – LUT formatting configuration
-- Chapters/ – Report chapters and front matter
-- Figures/ – Illustrations and LUT logo
-- References.bib – Bibliographic references
-- build-report.ps1 – PowerShell compilation script
-- build/ – Generated PDF and auxiliary files
-
-### PDF Compilation
-
-From the repository root, use:
-
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\report\build-report.ps1"
-
-The build script uses XeLaTeX and Biber.
-
-The generated PDF is intended to appear at:
-
-    report/build/Thesis.pdf
-
-The Windows compilation workflow is still being
-troubleshot and must be verified before final submission.
-
-## 8. Team Collaboration
-
-The project uses Git and GitHub for version control,
-documentation, and team collaboration.
-
-Repository:
-
+**Repository:**  
 https://github.com/SUPERITHAKA/SUSTCITIES-OLT3
 
-Team members should use separate branches for major
-changes and submit pull requests for review.
+### Collaboration Guidelines
 
-Project source code, report chapters, figures,
-references, and testing documentation should be
-maintained together in the repository.
+- Keep documentation updated.
+- Use Git branches for individual features and major changes.
+- Submit pull requests for significant modifications.
+- Review code before merging changes.
+- Document new features and functionality.
+- Avoid overwriting other team members' work.
+- Report bugs and propose improvements.
 
-## 9. Expected Deliverables
+## 8. Project Status
 
-The planned project deliverables are:
+**Current status: Prototype developed – Further development and evaluation ongoing.**
 
-1. Improved Online Learning Tool web application
-2. Educational content and interactive activities
-3. Documentation of design and development
-4. Accessibility and usability evaluation
-5. Analysis of user feedback and learning outcomes
-6. Scientific report using LUT formatting
-7. Final demonstration of the developed learning tool
+The initial learning platform includes three missions, interactive knowledge checks, a city simulation, progress tracking, and an achievement system.
 
-Deliverable completion will be updated as the
-project progresses.
+Further improvements, testing, accessibility evaluation, and educational content development remain part of the project.
 
-## 10. Project Status
+## 9. Future Development
 
-**Status: Development and evaluation in progress**
+Potential improvements include:
 
-The initial React prototype is implemented and
-builds successfully.
-
-The learning experience, formal testing,
-scientific report, and final evaluation
-remain under development.
+- Additional educational content and scenarios.
+- More advanced interactive city simulations.
+- Improved accessibility and multilingual support.
+- Expanded learning assessments.
+- User feedback and progress analytics.
+- Further visual and usability improvements.
 
 ---
 
-LUT University – Sustainable Cities
+**Stormwater Academy | Online Learning Tool (OLT)**
 
-Online Learning Tool (OLT)
-
-Stormwater Management and Flood Resilience
-'@ | Set-Content "report\README.md" -Encoding UTF8
-
-Write-Host "OLT REPORT README UPDATED SUCCESSFULLY!" -ForegroundColor Green
-code "report\README.md"
+Student-developed project  
+Sustainable Cities – LUT University  
+Academic Year 2026–2027
